@@ -65,7 +65,7 @@
   },
   "dependencies": {
     "arrify": "^1.0.0",
-    "chalk": "^2.0.0",
+    "chalk": "2.0.1",
     "diff": "^3.1.0",
     "make-error": "^1.1.1",
     "minimist": "^1.2.0",
