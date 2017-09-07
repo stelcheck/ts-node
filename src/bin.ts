@@ -57,6 +57,11 @@ v8flags(function (err, v8flags) {
     { stdio: 'inherit' }
   )
 
+  // Ignore the following signals; the child process will be receiving them,
+  // and should exit by itself
+  process.on('SIGINT', () => true)
+  process.on('SIGTERM', () => true)
+
   proc.on('exit', function (code: number, signal: string) {
     process.on('exit', function () {
       if (signal) {
