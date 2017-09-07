@@ -9,6 +9,7 @@
   },
   "files": [
     "dist/",
+    "register/",
     "typings.js",
     "register.js",
     "LICENSE"
